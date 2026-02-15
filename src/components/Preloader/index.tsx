@@ -10,7 +10,7 @@ export function PageLoader({ progress }: { progress: number }) {
     const [visualProgress, setVisualProgress] = useState(0);
 
     useEffect(() => {
-        const timer = setTimeout(() => setMinTimeElapsed(true), 1200); // Slightly faster min time
+        const timer = setTimeout(() => setMinTimeElapsed(true), 1200);
         return () => clearTimeout(timer);
     }, []);
 
@@ -33,7 +33,7 @@ export function PageLoader({ progress }: { progress: number }) {
 
     useEffect(() => {
         if (minTimeElapsed && progress >= 100 && visualProgress >= 99.9) {
-            const t = setTimeout(() => setShow(false), 600); // Longer delay for exit animation
+            const t = setTimeout(() => setShow(false), 600);
             return () => clearTimeout(t);
         }
     }, [minTimeElapsed, progress, visualProgress]);
