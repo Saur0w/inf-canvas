@@ -1,15 +1,15 @@
 "use client";
 
 
-import * as React from "react";
-import manifest from "";
+import { useState }  from "react";
+import Images from "@/images.json";
 import { InfiniteCanvas } from "~/src/infinite-canvas";
 import type { MediaItem } from "~/src/infinite-canvas/types";
 import { PageLoader } from "@/components/Preloader/index";
 
 export function App() {
-    const [media] = React.useState<MediaItem[]>(manifest);
-    const [textureProgress, setTextureProgress] = React.useState(0);
+    const [media] = useState<MediaItem[]>(Images);
+    const [textureProgress, setTextureProgress] = useState(0);
 
     if (!media.length) {
         return <PageLoader progress={0} />;
