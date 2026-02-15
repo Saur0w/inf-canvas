@@ -526,7 +526,9 @@ export function InfiniteCanvasScene({
                                         fogColor = "#ffffff",
                                     }: infiniteCanvasProps) {
     const isTouchDevice = TouchDevice();
-    const dpr = Math.min(window.devicePixelRatio || 1, isTouchDevice ? 1.25 : 1.5);
+    const dpr = typeof window === 'undefined'
+        ? 1
+        : Math.min(window.devicePixelRatio || 1, isTouchDevice ? 1.25 : 1.5);
 
     if (!media.length) {
         return null;

@@ -1,7 +1,12 @@
-import React, {useEffect, useState} from 'react';
+"use client";
+
+import {useEffect, useState} from 'react';
 
 const getIsTouchDevice = (): boolean => {
-    const hasTouchEvent = 'ontouchstart' in window;
+    if (typeof window === "undefined") {
+        return false;
+    }
+    const hasTouchEvent = "ontouchstart" in window || navigator.maxTouchPoints > 0;
     const hasTouchPoints = navigator.maxTouchPoints > 0;
     const hasCoarsePointer = window.matchMedia?.("(pointer: coarse)").matches ?? false;
 
