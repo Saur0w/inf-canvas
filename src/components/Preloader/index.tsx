@@ -19,7 +19,6 @@ export function PageLoader({ progress }: { progress: number }) {
         const animate = () => {
             const diff = progress - visualRef.current;
             if (Math.abs(diff) > 0.01) {
-                // Smoother easing: slower at the end for a premium feel
                 visualRef.current += diff * 0.06;
                 setVisualProgress(visualRef.current);
                 raf = requestAnimationFrame(animate);
@@ -46,12 +45,11 @@ export function PageLoader({ progress }: { progress: number }) {
     return (
         <div className={`${styles.overlay} ${isHidden ? styles.hidden : styles.visible}`}>
             <div className={styles.content}>
-                {/* Minimalist Percentage Counter */}
+
                 <div className={styles.counter}>
                     {Math.round(visualProgress)}%
                 </div>
 
-                {/* Ultra-thin loading line */}
                 <div className={styles.loaderTrack}>
                     <div
                         className={styles.loaderFill}

@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fafafa; // Slightly off-white for a premium feel
+  background: #fafafa;
   transition: opacity 0.8s cubic-bezier(0.65, 0, 0.35, 1),
   visibility 0.8s;
 
@@ -14,7 +14,6 @@
     visibility: hidden;
     pointer-events: none;
 
-    // The content will subtly shift down as it disappears
     .content {
       transform: translateY(10px);
       filter: blur(4px);
@@ -36,7 +35,7 @@
   }
 
   .counter {
-    font-family: 'Inter', sans-serif; // Or your site's main font
+    font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.15em;

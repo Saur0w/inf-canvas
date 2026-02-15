@@ -2,116 +2,162 @@
   {
     "url": "/images/1.jpg",
     "type": "image",
-    "title": "Motion Blur"
+    "title": "Motion Blur",
+    "width": 3072,
+    "height": 4096
   },
   {
     "url": "/images/2.jpg",
     "type": "image",
-    "title": "valley"
+    "title": "valley",
+    "width": 7008,
+    "height": 4672
   },
   {
     "url": "/images/3.jpg",
     "type": "image",
-    "title": "Top View"
+    "title": "Top View",
+    "width": 6048,
+    "height": 8064
   },
   {
     "url": "/images/4.jpg",
     "type": "image",
-    "title": "Sheep"
+    "title": "Sheep",
+    "width": 5152,
+    "height": 7728
   },
   {
     "url": "/images/5.jpg",
     "type": "image",
-    "title": "NewsPaper"
+    "title": "NewsPaper",
+    "width": 3024,
+    "height": 4032
   },
   {
     "url": "/images/6.jpg",
     "type": "image",
-    "title": "Mountain and Flowes"
+    "title": "Mountain and Flowers",
+    "width": 3456,
+    "height": 5184
   },
   {
     "url": "/images/7.jpg",
     "type": "image",
-    "title": "dusk"
+    "title": "dusk",
+    "width": 2571,
+    "height": 3840
   },
   {
     "url": "/images/8.jpg",
     "type": "image",
-    "title": "bnw of a Boat"
+    "title": "bnw of a Boat",
+    "width": 4000,
+    "height": 6016
   },
   {
     "url": "/images/9.jpg",
     "type": "image",
-    "title": "BnW Portrait of a Flower"
+    "title": "BnW Portrait of a Flower",
+    "width": 2848,
+    "height": 4288
   },
   {
     "url": "/images/10.jpg",
     "type": "image",
-    "title": "Rain Droplets of Flower"
+    "title": "Rain Droplets of Flower",
+    "width": 4608,
+    "height": 3456
   },
   {
     "url": "/images/11.jpg",
     "type": "image",
-    "title": "Macro"
+    "title": "Macro",
+    "width": 2584,
+    "height": 3716
   },
   {
     "url": "/images/12.jpg",
     "type": "image",
-    "title": "Neptune"
+    "title": "Neptune",
+    "width": 4614,
+    "height": 3459
   },
   {
     "url": "/images/13.jpg",
     "type": "image",
-    "title": "Sunrise"
+    "title": "Sunrise",
+    "width": 6000,
+    "height": 4000
   },
   {
     "url": "/images/14.jpg",
     "type": "image",
-    "title": "Landscape"
+    "title": "Landscape",
+    "width": 5184,
+    "height": 3240
   },
   {
     "url": "/images/15.jpg",
     "type": "image",
-    "title": "Clouds"
+    "title": "Clouds",
+    "width": 4104,
+    "height": 2736
   },
   {
     "url": "/images/16.jpg",
     "type": "image",
-    "title": "Night Sky"
+    "title": "Night Sky",
+    "width": 3840,
+    "height": 5760
   },
   {
     "url": "/images/17.jpg",
     "type": "image",
-    "title": "Waterfall"
+    "title": "Waterfall",
+    "width": 3213,
+    "height": 4813
   },
   {
     "url": "/images/18.jpg",
     "type": "image",
-    "title": "Frog"
+    "title": "Frog",
+    "width": 3382,
+    "height": 2673
   },
   {
     "url": "/images/19.jpg",
     "type": "image",
-    "title": "Pink Flower"
+    "title": "Pink Flower",
+    "width": 4896,
+    "height": 3060
   },
   {
     "url": "/images/20.jpg",
     "type": "image",
-    "title": "Flower"
+    "title": "Flower",
+    "width": 5472,
+    "height": 3648
   },
   {
     "url": "/images/21.jpg",
     "type": "image",
-    "title": "Orange Flowers"
+    "title": "Orange Flowers",
+    "width": 4928,
+    "height": 3264
   },
   {
     "url": "/images/22.jpg",
     "type": "image",
-    "title": "Fog"
+    "title": "Fog",
+    "width": 3072,
+    "height": 4608
   },
   {
     "url": "/images/23.jpg",
     "type": "image",
-    "title": "Gold Fish"
+    "title": "Gold Fish",
+    "width": 5142,
+    "height": 7242
   }
 ]
