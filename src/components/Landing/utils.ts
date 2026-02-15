@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { hashString, seededRandom } from "@/util";
-import type { PlaneData } from "./types";
+import type {MediaItem, PlaneData} from "./types";
 import {CHUNK_SIZE} from "@/components/Landing/constants";
 
 const MAX_PLANE_CACHE = 25;
@@ -22,6 +22,23 @@ const evictPlaneCache = () => {
         if (!firstKey) break;
         planeCache.delete(firstKey);
     }
+};
+
+export const getChunkUpdateThrottleMs = (isZooming: boolean, zoomSpeed: number): number => {
+    if (zoomSpeed > 1.0) {
+        return 500;
+    }
+
+    if (isZooming) {
+        return 400;
+    }
+
+    return 100;
+};
+
+export const getMediaDimension = (media: HTMLImageElement | undefined) => {
+    const width = media instanceof HTMLImageElement ? media.naturalWidth || media.width : undefined;
+    const height = media instanceof HTMLImageElement ? media.naturalHeight || media.height : undefined;
 };
 
 export const generateChunkPlanes = (cx: number, cy: number, cz: number): PlaneData[] => {

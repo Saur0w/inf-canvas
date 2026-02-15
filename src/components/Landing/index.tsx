@@ -1,13 +1,13 @@
 "use client";
 
-import styles from "./style.module.scss";
-import Link from "next/link";
+import { ComponentProps, Suspense, lazy } from "react";
 
-export default function Landing() {
+const LazyInfiniteCanvasScene = lazy(() => import("./Scene").then((mod) => ({ default: mod.InfiniteCanvasScene })));
+
+export function InfiniteCanvas(props: ComponentProps<typeof LazyInfiniteCanvasScene>) {
     return (
-      <section className={`frame ${styles.landing}`}>
-          <h1 className={styles.title}>Infinite Canvas</h1>
-          
-      </section>
+        <Suspense fallback={null}>
+            <LazyInfiniteCanvasScene {...props} />
+        </Suspense>
     );
 }
